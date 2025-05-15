@@ -26,7 +26,7 @@ let pauseMonteeEntreLed = 0
 let delaiAvtMontee = 0
 let strip: neopixel.Strip = null
 let nbLeds = 0
-nbLeds = 20
+nbLeds = 115
 strip = neopixel.create(DigitalPin.P0, nbLeds, NeoPixelMode.RGB)
 strip.setBrightness(200)
 strip.showColor(neopixel.colors(NeoPixelColors.Black))
