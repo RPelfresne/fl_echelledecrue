@@ -10,18 +10,27 @@ input.onGesture(Gesture.LogoUp, function () {
     strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
     strip.show()
     basic.pause(5000)
+    for (let index = 0; index < nbRepetStrobo; index++) {
+        strip.showColor(neopixel.colors(NeoPixelColors.Black))
+        strip.show()
+        basic.pause(100)
+        strip.showColor(neopixel.colors(NeoPixelColors.White))
+        strip.show()
+    }
+    strip.showColor(neopixel.colors(NeoPixelColors.Black))
+    strip.show()
 })
+let nbRepetStrobo = 0
 let pauseMonteeEntreLed = 0
 let delaiAvtMontee = 0
-let nbLeds = 0
 let strip: neopixel.Strip = null
+let nbLeds = 0
+nbLeds = 115
 strip = neopixel.create(DigitalPin.P0, nbLeds, NeoPixelMode.RGB)
 strip.showColor(neopixel.colors(NeoPixelColors.Black))
 strip.show()
-nbLeds = 115
 delaiAvtMontee = 5000
 let dureeMontee = 30000
 pauseMonteeEntreLed = dureeMontee / nbLeds
-basic.forever(function () {
-	
-})
+let dureeStrobo = 5000
+nbRepetStrobo = dureeStrobo / 100
