@@ -16,6 +16,7 @@ input.onGesture(Gesture.LogoUp, function () {
         basic.pause(100)
         strip.showColor(neopixel.colors(NeoPixelColors.White))
         strip.show()
+        basic.pause(100)
     }
     strip.showColor(neopixel.colors(NeoPixelColors.Black))
     strip.show()
@@ -27,6 +28,7 @@ let strip: neopixel.Strip = null
 let nbLeds = 0
 nbLeds = 20
 strip = neopixel.create(DigitalPin.P0, nbLeds, NeoPixelMode.RGB)
+strip.setBrightness(200)
 strip.showColor(neopixel.colors(NeoPixelColors.Black))
 strip.show()
 delaiAvtMontee = 5000
