@@ -1,5 +1,5 @@
 
-> Ouvrir cette page à [https://rpelfresne.github.io/fl_regledecrue/](https://rpelfresne.github.io/fl_regledecrue/)
+> Ouvrir cette page à [https://rpelfresne.github.io/fl_echelledecrue/](https://rpelfresne.github.io/fl_echelledecrue/)
 
 ## Utiliser comme extension
 
@@ -8,7 +8,7 @@ Ce dépôt peut être ajouté en tant qu'**extension** dans MakeCode.
 * ouvrir [https://makecode.microbit.org/](https://makecode.microbit.org/)
 * cliquez sur **Nouveau projet**
 * cliquez sur **Extensions** dans le menu engrenage
-* recherchez **https://github.com/rpelfresne/fl_regledecrue** et importez
+* recherchez **https://github.com/rpelfresne/fl_echelledecrue** et importez
 
 ## Éditer ce projet
 
@@ -16,7 +16,7 @@ Ce dépôt peut être ajouté en tant qu'**extension** dans MakeCode.
 
 * ouvrir [https://makecode.microbit.org/](https://makecode.microbit.org/)
 * cliquez sur **Importer** puis cliquez sur **Importer l'URL **
-* collez **https://github.com/rpelfresne/fl_regledecrue** et cliquez sur importer
+* collez **https://github.com/rpelfresne/fl_echelledecrue** et cliquez sur importer
 
 #### Métadonnées (utilisées pour la recherche, le rendu)
 
