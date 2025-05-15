@@ -1,5 +1,5 @@
 {
-    "name": "FL_RegleDeCrue",
+    "name": "FL_EchelleDeCrue",
     "description": "",
     "dependencies": {
         "core": "*",
