@@ -26,13 +26,17 @@ let pauseMonteeEntreLed = 0
 let delaiAvtMontee = 0
 let strip: neopixel.Strip = null
 let nbLeds = 0
+basic.showIcon(IconNames.Sword)
 nbLeds = 115
 strip = neopixel.create(DigitalPin.P0, nbLeds, NeoPixelMode.RGB)
-strip.setBrightness(200)
+basic.pause(100)
+strip.setBrightness(10)
+basic.pause(100)
 strip.showColor(neopixel.colors(NeoPixelColors.Black))
+basic.pause(100)
 strip.show()
 delaiAvtMontee = 5000
-let dureeMontee = 30000
+let dureeMontee = 20000
 pauseMonteeEntreLed = dureeMontee / nbLeds
-let dureeStrobo = 5000
+let dureeStrobo = 2000
 nbRepetStrobo = dureeStrobo / 100
