@@ -1,4 +1,11 @@
 input.onGesture(Gesture.LogoUp, function () {
+    basic.showLeds(`
+        . . # . .
+        . # # # .
+        # . # . #
+        . . # . .
+        . . # . .
+        `)
     basic.pause(delaiAvtMontee)
     for (let index = 0; index < nbLeds; index++) {
         strip.shift(1)
@@ -21,12 +28,29 @@ input.onGesture(Gesture.LogoUp, function () {
     strip.showColor(neopixel.colors(NeoPixelColors.Black))
     strip.show()
 })
+input.onGesture(Gesture.ScreenUp, function () {
+    basic.showLeds(`
+        . . . . .
+        . . # . .
+        . # # # .
+        . . # . .
+        . . . . .
+        `)
+    strip.showColor(neopixel.colors(NeoPixelColors.Black))
+    strip.show()
+})
 let nbRepetStrobo = 0
 let pauseMonteeEntreLed = 0
 let delaiAvtMontee = 0
 let strip: neopixel.Strip = null
 let nbLeds = 0
-basic.showIcon(IconNames.Sword)
+basic.showLeds(`
+    # # . . #
+    # . . # .
+    # # . # .
+    # . . # .
+    # # . . #
+    `)
 nbLeds = 115
 strip = neopixel.create(DigitalPin.P0, nbLeds, NeoPixelMode.RGB)
 basic.pause(100)
