@@ -54,7 +54,7 @@ basic.showLeds(`
 nbLeds = 115
 strip = neopixel.create(DigitalPin.P0, nbLeds, NeoPixelMode.RGB)
 basic.pause(100)
-strip.setBrightness(10)
+strip.setBrightness(150)
 basic.pause(100)
 strip.showColor(neopixel.colors(NeoPixelColors.Black))
 basic.pause(100)
